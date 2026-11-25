@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --surface-obsidian: rgba(14, 15, 22, 0.92);
+    --surface-panel: rgba(20, 22, 31, 0.94);
+    --surface-elevated: rgba(29, 32, 44, 0.96);
+    --border-gold: rgba(208, 168, 92, 0.42);
+    --border-gold-strong: rgba(226, 188, 108, 0.75);
+    --border-subtle: rgba(148, 163, 184, 0.18);
+    --accent-gold: #e0b254;
+    --accent-crimson: #c83e3b;
+    --accent-arcane: #3b82f6;
+    --accent-emerald: #10b981;
+    --text-parchment: #f4efe6;
+    --text-muted: #a6adbe;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0d14;
+    color: var(--text-parchment);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+  }
+
+  input,
+  textarea {
+    user-select: text;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-text-shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+.hud-panel {
+  background: var(--surface-obsidian);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.52), inset 0 1px 0 rgba(255, 232, 180, 0.12);
+}
+
+.hud-panel-subtle {
+  background: rgba(13, 15, 22, 0.86);
+  border: 1px solid rgba(208, 168, 92, 0.28);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* Custom slim dark scrollbar inside modals/chat */
+.realm-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.realm-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 17, 25, 0.6);
+}
+.realm-scroll::-webkit-scrollbar-thumb {
+  background: rgba(208, 168, 92, 0.35);
+  border-radius: 3px;
+}
+.realm-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(208, 168, 92, 0.6);
+}

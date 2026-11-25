@@ -1,0 +1,6 @@
+{
+  "name": "ShadowRealms: Voxel Ascendant",
+  "description": "An open-world 3D fantasy MMORPG engine with character classes, fantasy lineages, real-time action combat, cultivation progression, persistent multiplayer realms, guilds, and party systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
